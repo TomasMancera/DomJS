@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="./styles/calculadora.css">
+    <title>Calculator App</title>
+</head>
+<body>
+    <div id="container">
+        <div class="loader">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <!--Calculadora-->
+        <div id="calculator">
+            <h2 id="userName"></h2>
+            <input type="text" id="input">
+            <br>
+            
+            <button class="boton-calc" onclick="calculate()">=</button>
+            <button class="boton-calc"onclick="addToInput('*')">*</button>
+            <button class="boton-calc"onclick="addToInput('2')">2</button>
+            <button class="boton-calc"onclick="addToInput('3')">3</button>
+            <button class="boton-calc"onclick="addToInput('.')">.</button>
+            <br>
+            <button class="boton-calc" onclick="addToInput('4')">4</button>
+            <button class="boton-calc" onclick="addToInput('5')">5</button>
+            <button class="boton-calc" onclick="addToInput('6')">6</button>
+            <button class="boton-calc" onclick="addToInput('-')">-</button>
+            <br>
+            <button class="boton-calc" onclick="addToInput('7')">7</button>
+            <button class="boton-calc" onclick="addToInput('8')">8</button>
+            <button class="boton-calc" onclick="addToInput('9')">9</button>
+            <button class="boton-calc" onclick="addToInput('1')">1</button>
+            <br>
+            <button class="boton-calc" onclick="addToInput('0')">0</button>
+            <button class="boton-calc" onclick="addToInput('+')">+</button>
+            <button class="boton-calc" onclick="addToInput('/')">/</button>
+            <br>
+            <button class="boton-calc" onclick="clearInput()">Clear</button>
+          </div>
+
+    </div>
+    <div id = "fibonacci">
+        <h2 class="title-fibo">Conoce el fibonacci de un numero</h2>
+        <button type="button" class="boton-fibo">CLICK AQUI</button>
+    </div>
+    <div id="areaCuadrado">
+        <h2 class="title-area">Conoce el area de un triangulo</h2>
+        <label for="base">BASE:</label>
+        <input class="input-base" type="number">
+        <label for="altura">Altura:</label>
+        <input class="input-altura" type="number">
+        <button type="button" class="boton-area">ENCONTRAR AREA</button>
+        <h3 id="print-area"></span></h3>
+    </div>
+    <div id="interval">
+        <h2 class="title-interval">Conoce el intervalo entre dos numeros</h2>
+        <label for="numeroUno">Numero Uno</label>
+        <input class="input-uno" type="number">
+        <label for="numeroDos">Numero Dos</label>
+        <input class="input-dos" type="number">
+        <button type="button" class="boton-interval">CONOCER INTERVALO</button>
+        <h3 id="print-interval"></h3>
+    </div>
+    <div id="converter">
+        <h2 class="title-converter">Conoce la conversion de grados fahrenheit a celsius</h2>
+        <label for="convert">Ingresa grados en fahrenheit</label>
+        <input class="input-converter" type="number">
+        <button type="button" class="boton-converter">CONOCER CELSIUS</button>
+        <h3 id="print-convert"></h3>
+
+    </div>
+    
+       
+    
+
+    <script src="calc.js"></script>
+    
+</body>
+</html>
